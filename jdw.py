@@ -31,21 +31,3 @@ postX.columns = ['No.', 'postLSA', 'postDSA', 'postGleneCDR', 'postGleneGT',
 
 X = pd.merge(preX, postX, on='No.')
 X = X.set_index('No.')
-
-# from the prosthesis position (postopRX & post-preopRX: is there a
-# position that gives best res for 1/ everyone or 2/ with
-# respect to preop data)
-# - LSA (lateralisation angle)
-# - DSA (distalisation angle)
-# - GT-glenoide
-# - CDR-glenoide
-# - H: acromi
-# - L: Acromi
-# - beta angle
-# - tilt horzontal (angle negatif vers le haut, pas
-# bien)
-# - tilt fosse (angle negatif qd omoplate regarde
-# vers le haut)
-
-# - CSA (only preop)
-# - do not take CDR GT (hidden)
